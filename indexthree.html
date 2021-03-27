@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="icon" href="imagesthree/footer-img.png" type="image/x-icon" />
+<link rel="stylesheet" href="stylethree.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<body>
+    <section id="banner">
+        <img src="imagesthree/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>style Your hair Is style Your Life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTMONIAIS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="imagesthree/menu.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        sidenav.style.right = "-250px"
+
+        menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "imagesthree/close.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "imagesthree/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
